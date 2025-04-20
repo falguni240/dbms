@@ -1,0 +1,601 @@
+Create database using following schema. Apply given Integrity Constraints and answer the following 
+queries using SQL.(Fill up database with at least 10 records in each table). 
+SUPPLIER ( Sno, Sname, address,City) 
+PARTS ( Pno, Pname, Color, Weight, price ) PROJECT ( Jno, 
+Mame, City ) 
+SPJ ( in=q,En, JUQ, Qty ) 
+Integrity Constraints:  
+• The values of any attributes should not be null. 
+• Legal cities are London, Paris, Rome, New York and Amsterdam. 
+• Supplier Number must start with 'S' followed by a decimal integer in the range of 0 
+to 9999. 
+Queries: 
+a) Find all the projects which are provided 3 or more parts . 
+b) Write a trigger on PROJECT table for update / insert such that the .jname value Should not 
+be repeated. 
+c) Find full details of all projects in London. 
+d) Write a procedure for calculating the total sales of all the parts which are provided to 
+projects in paris city. 
+Design an Input form for entering Parts data. Apply possible validations.
+
+Create database using following schema. Apply given Integrity Constraints and answer the following 
+queries using SQL.(Fill up database with at least 10 records in each table). 
+PRODUCT ( Maker,  Modelno, Type ) 
+PC ( Modelno,,Speed, RAM, HD, CD, Price ) 
+LAPTOP ( Modelno, Speed, RAM, HD, Price ) 
+PRINTER ( Mg_delaQ, Color, Type, Price ) 
+Details regarding Schemas 
+• PC relation contains model no. of PC, its speed in MHz, RAM in MB, HD size in GB, 
+Speed of CD reader, and price. 
+• The value for Maker in Product table can be IBM, Compaq,etc. 
+• PRINTER relation contains model no., value of Color should be T(if printer is color) or F (if 
+printer is black 8r. white), type(laser, ink-jet, dot- matrix or dry), and price. 
+Integrity Constraints:  
+• The values of any attributes should not be null. 
+• Product Type should one of these (PC, Laptop or Printer) 
+Queries:  
+a) Find PC models having a speed of at least 150 MHz. 
+b) Find those manufacturers that sell Laptops, but not PC's. 
+c) Write a trigger on LAPTOP table such that the price should not less than 30000 
+d) Write a procedure to find the manufacturer who has produced the most expensive laptop. 
+Design an input form for entering LAPTOP data. Apply possible validations. 
+
+
+Create database using following schema. Apply given Integrity Constraints and answer the 
+following queries using SQL.(Fill up database with at least 10 records in each table). 
+'PRODUCT ( Maker,  Modelno, Type ) 
+PC ( Modelno, Speed, RAM, HD, CD, Price ) 
+LAPTOP ( Modelno, Speed, RAM, HD, Price ) 
+PRINTER ( Modelno, Color, Type, Price ) 
+Details regarding Schemas  
+• PC relation contains model no. of PC, its speed in MHz, RAM in MB, HD size in 
+GB, Speed of CD reader, and price. 
+• The value for Maker in Product table can be IBM, Compaq,etc. 
+• PRINTER relation contains model no., value of Color should be T(if printer is 
+color) or F (if printer is black & white), type(laser, ink-jet, dot- matrix or dry), and 
+price. 
+Integrity Constraints:  
+• The values of any attributes should not be null. 
+• Product Type should one of these (PC, Laptop or Printer) 
+Queries:  
+a) Find the different types of printers produced by Epson. 
+b) Find those hard disk sizes which occur in two or more PC's. 
+c) Write a trigger on LAPTOP table such that the minimum speed should be 1201\4Hz. 
+d) Demonstrate the use of cursor using PRODUCT table. 
+Design an input form for entering LAPTOP data. Apply possible validations.
+
+
+Create database using following schema. Apply given Integrity Constraints and answer the 
+following queries using SQL. (Fill up database with at least 10 records in each table). 
+DOCTOR (Did, Dname, Daddress, qualification) 
+1AT1ENTMASTER (Pcode, Pname, Padd, age, gender, bloodgroup, Pid) ADMITTEDPATIENT 
+(P_code, Entry date, Discharge date, wardno, disease ) 
+Integrity Constraints: 
+• The values of any attributes should not be null. 
+• Gender value should be M male) or F(female). 
+• Wardno should be less than 6. 
+Queries: 
+a) Find the details of doctors who are treating the patient of ward no 3. 
+b) Write a trigger on PATIENTMASTER table such that the blood group should be 
+A,B,AB or 0. 
+c) Find the details of patient who are discharge within the period 03/03/12 to 25/ 
+03/12 
+d) Write a procedure on ADMIFTEDPATIENT table such as to calculate bill of 
+all discharged patients. The charges per day for a ward is WardNo. * 100. e.g. For 
+ward no 3 charges/day are 300Rs. 
+Create a data report for the details of Doctors. Report should also include the details of 
+patients treated by that doctor.
+
+Create database using following schema. Apply given Integrity Constraints and answer the 
+following queries using SQL. (Fill up database with at least 10 records in each table). 
+DOCTOR (Did, Dname, Daddress, qualification) 
+PATIENTMASTER (Pcode, Pname, Padd, age, gender, bloodgroup, Did) 
+ADMITTEDPATIENT (Pcode, Entry date, Discharge_date, wardno, disease ) 
+Integrity Constraints:  
+• The values of any attributes should not be null. 
+• Gender value should be M (male) or F(female). 
+• Wardno should be less than 6. 
+Queries: 
+a) Find the details of the doctors who are treating the patients of ward no 3 & display the 
+result along with patient name & disease. 
+b) Find the name of the disease by which maximum patients are suffering. 
+c) Write a trigger on ADMITTEDPATIENT table such that the wardno value should be 
+between 1-5. 
+d) Write a procedure to give the details of patients who are admitted in the hospital for 
+more than 5 days. 
+Create a input form for doctors. Apply all possible validations. 
+
+Create database using following schema. Apply given Integrity Constraints and answer the 
+following queries using SQL. (Fill up database with at least l 0 records in each table). 
+DOCTOR (Did, Dname, Daddress, qualification) 
+PATIENTMASTER (Pcode, Pnarne, Padd, age, gender, bloodgroup, aid) ADMITTEDPATIENT 
+(Pcode, Entry_date, Discharge date, wardno, disease ) 
+Integrity Constraints:  
+• The values of any attributes should not be null. 
+• Gender value should be M (male) or F(female). 
+• Wardno should be less than 6. 
+Queries: 
+a) Find details of the patients who are treated by M.B.B.S. doctors. 
+b) Find the details of patient who is suffered from blood cancer having age less than 50 
+years & blood group is A. 
+c) write a procedure on ADMITTEDPATIENT table such as to calculate the bill of all 
+patients. (bill no of days * 600) 
+d) Write a cursor on PATIENTMASTER table to fetch the last record & display the rows in 
+that table. 
+Create a data entry for New Doctor's entry. Apply all possible validations
+
+Create database using following schema. Apply given Integrity Constraints and answer the 
+following queries using SQL. (Fill up database with at least 10 records in each table). 
+DOCTOR (Did, Dname, Daddress, qualification) 
+PATIENTMASTER (Pcocle, Pname, Padd, age, gender, bloodgroup, Did) ADMITTEDPATIENT 
+(Pcode, Entry date, Discharge date. wardno, disease ) 
+Integrity Constraints:  
+• The values of any attributes should not be null. 
+• Gender value should be M (male) or F(female). 
+• Wardno should be less than 6. 
+Queries:  
+a) Find details of the patients who are treated by M.S. doctors. 
+b) Find the name of doctor who is treating maximum number of patients. 
+c) Write a procedure to give the details of patients who are admitted in the hospital for 
+more than 15 days. 
+d) Create a view on DOCTOR & PATIENTMASTER tables. Update details of the 
+patients who are treated by B.A.-M.S. doctors to M.B.B.S doctor. 
+Create a data entry form for discharging a patient. Also give information 
+regarding his bill. (bill no_of_days * 500) 
+
+
+Create database using following schema. Apply given Integrity Constraints and 
+answer the following queries using SQL. (Fill up database with at least 10 records 
+in each table). 
+ACCOUNT (accno, open date. acctype, balance) 
+TRANSACTION (trans id, trans date, accno, trans type, amount) 
+CUSTOMER (cust id, name, address, Accno) 
+Integrity Constraints:  
+• The values of any attributes should not be null. 
+• acctype value should be P(Personal) or J(Joint). 
+• Accno should be less than 3 digits. 
+• Trans type should be C(Credit) or D(Debit) 
+Queries:  
+a) Find the details of customers whose minimum balance is 1 lakhs. 
+b) Find the details of amount credited within the period 25-3-2012 to 28-3- 
+2012 
+c) Write a trigger on TRANSACTION table to calculate current balance of 
+account on which transaction is made. 
+d) Write a cursor on ACCOUNT table of balance attribute such that if the 
+balance is less than 10000 then print the 'loan is not provided'else 'loan is 
+provided'. 
+Create a data entry for New account entry. Apply all possible validation
+
+Create database using following schema. Apply given Integrity Constraints and 
+answer the following queries using SQL. (Fill up database with at least 10 records in 
+each table). 
+ACCOUNT (accno, open date, acctype, balance) 
+TRANSACTION (trans id, trans date,  cno, trans type, amount) 
+CUSTOMER (cust id, name, address, accno) 
+Integrity Constraints:  
+• The values of any attributes should not be null. 
+• acctype value should be P(Personal) or J(Joint). 
+• Accno should be less than 3 digits. 
+• Trans_type should be C(Credit) Or D(Debit) 
+Queries: 
+a) Find the details of customers who have personal accounts & balance is 
+less than 2 lakhs. 
+b) Find the details of customers who have joint accounts. 
+c) Write a trigger on ACCOUNT table such that if balance is less than 
+300 then customer should not withdraw the money. 
+d) Write a procedure on ACCOUNT & TRANSACTION table such that as 
+user enters new transaction the balance is, updated in ACCOUNT table. 
+Create a data entry for New customer entry. Apply all possible validations.
+
+Create database using following schema. Apply given integrity Constraints and 
+answer the following queries using SQL. (Fill up database with at least 10 records in 
+each table). 
+ACCOUNT (accno, open date. acctype, balance) 
+TRANSACTION (trans id, trans date, accno, trans type, amount) 
+CUSTOMER (cust id, name, address. accno) 
+Integrity Constraints: 
+• The values of any attributes should not be null. 
+• acctype value should be P(Personal) or Moira): 
+• Accno should be less than 3 digits. 
+• Transtype should be C(Credit) or D(Debit) 
+Queries: 
+a) Find the details of all transactions performed on account number 101. 
+Also specify the name/names of cutomers who owns that account. 
+b) Find the details ol amount credited within the period 15 -3-2012 
+to 18 -3 -2012. 
+c) Write a trigger on insert on ACCOUNT table such that the account 
+which is having balance less than or equal to 500 should not be 
+debited. 
+d) Write a procedure on ACCOUNT table to calculate interest on current 
+balance from open_date to today's date. (Take interest rate from user). 
+Create a data entry for New account entry. Apply all possible validations.
+
+.Creat4 database using following schema. Apply given Integrity Constraints and 
+answer the following queries using SQL. (Fill up database with at least 10 records in 
+each table). 
+ACCOUNT (accno, open date, acctype, balance) 
+TRANSACTION (trans id, trans date, accno, trans type, amount) 
+CUSTOMER (cust id name, address, accno) 
+Integrity Constraints:  
+• The values of any attributes should not be null. 
+• acctype value should be P(Personal) or Moira). 
+• Accno should be less than 3 digits. 
+• Trans_type should be C(Credit) or D(Debit) 
+Queries:  
+a) Find the details of customers who have opened the accounts within the 
+period 25-3-2012 to 28-3-2012. 
+b) Find the details of customers who have joint accounts & balance is less 
+than 2 lakhs. 
+c) Write a trigger TRANSACTION on table to calculate the current balance of 
+the account on which transaction is made. 
+( if trans_type = c then bal = bal amt else if trans_type = d then 
+bal = bal — amt) 
+d) write a cursor on CUSTOMER table to fetch the last row. 
+Create a data entry for New customer entry. Apply all possible validations. 
+North Maharashtra University, Jalgaon 
+
+ 
+Create database using following schema. Apply given Integrity Constraints and 
+answer the following queries using SQL. (Fill up database with at least 10 records in 
+eae,h table). 
+EMPLOYEE ( fname, Mame, ssn, sex, salary, joindate,superssn, dno,) 
+DEPT ( dname, dnum, mgrssn, dlocation) 
+PROJECT ( pname, pno, plocation, dnumber) 
+WORK ON ( ssn, pno, hours) 
+Integrity Constraints:  
+• The values of any attributes should not be null. 
+• The deptno should less than 4 digit 
+• ssn -(social security no of-employee) 
+• mgrssn(manager_social_security_no) 
+• superssn(supervisor_social_securit)'_no) 
+Queries:  
+a) For every project located in 'jalgaon". List the pno,the controlling detptno 
+and dept manager last name. 
+b) For each project on which more than two employee work, Find the pno, 
+pname & no. of employees who work on the project. 
+c) 
+create a view that has the deptname,manager name & manager salary 
+for every dept. 
+d) Express the following constraint as SQL assertions - 
+"salary of employee must not be greater than the salary of the manager of 
+the dept". 
+Create a data entry for New employee entry. Apply all possible validations. 
+North Maharashtra University, Jalgaon 
+
+
+Create database using following schema. Apply given Integrity Constraints and 
+answer the following queries using SQL. (Fill up database with at least 10 records in 
+each table). 
+EMPLOYEE ( fname, lname, ssn, sex, salary, joindate,superssn, dno,) 
+DEPT ( dname, dnum, En_grssn, (llocation) 
+PROJECT ( pname, pno, plocation, dnumber) 
+WORK ON ( 5sn, pno, hours) 
+Integrity Constraints:  
+• The values of any attributes should not be null. 
+• The deptno should less than 4 digit 
+• Ssn (social security_no of employee) 
+• Mgrssn(managersocial_security_no) 
+a Superssn(supervisor_social_security_no) 
+Queries:  
+a) For each employee, Find the employee first & last name & the first & last 
+name of his or her immediate supervisor. 
+b) For each dept, Find the deptno, the no. of employees in the dept & their 
+average salary. 
+c) Create a view that has pname,controlling dept name, no of employees, & total 
+hours worked per week on the project for each project with more than one 
+employee working on it. 
+d) Create a procedure on EMPLOYEE table to determine the employees who 
+will get promotion. (An employee will get promotion after working on 5 
+projects.) 
+Create a data report showing the information of all female employees working in 
+"Research" department. 
+
+
+Create database using following schema. Apply given Integrity Constraints and 
+answer the following queries using SQL. (Fill up database with at least 10 records in 
+eaCh table). 
+EMPLOYEE ( fna.me, Mame, ssn, sex, salary, joindate,superssn, dno4) 
+DEPT ( dname, dnum, mgrssn, dlocation) 
+PROJECT ( pname, pno, plocation, dnumber) 
+WORK_ ON ( ssn, pno, hours) 
+Integrity Constraints:  
+• The values of any attributes should not be null. 
+• The deptno should less than 4 digit 
+• Ssn (social_security_no of employee) 
+• Mgrssn(manager_social_security_no) 
+• Superssn(supervisor_social_security_no) 
+Queries: 
+a) Find the ssn of all employees who work on pno 101, 102 or 103. 
+b) Make a list of all pno for project that involve an employee whose last 
+name is 'sonar' either as a worker or as a manager of the dept that 
+control the project. 
+c) Write a trigger on insert on WORK_ON table such that if total work hours 
+of employee in company is less than 20 hours then his salary is 
+deducted. 
+d) Write a cursor on PROJECT table to fetch the first row from the table & 
+display the total number of rows present in the table. 
+Create a data report showing the informatio.n of all the projects and names of 
+employees working on individual projects. 
+
+
+Create database using following schema. Apply given Integrity Constraints and 
+answer the following queries using SQL. (Fill up database with at least 10 records in 
+each table). 
+BOOKMASTER ( bid, title, author, price) 
+STUDENTMASTER (stud enrollno, sname,class,dept) 
+ACCESSIONTABLE (bid, accession_no,avail) 
+ISSUETABLE(issueid,accession no,stud enrollno,issuedate,cluedate, ret_date,bid) 
+Integrity Constraints:  
+• The values of any attributes should not be null. 
+• Avail should be T ( if book is not issue ) or F (if book is issue) 
+Queries: 
+a) Find the name of books which is issued maximum times. 
+b) Find the detail information of books that are issued by computer 
+department students. 
+c) Write a procedure to calculate the fines for the books which are not 
+return on or before due date. no.of days = (ret_date - 
+due_date) fine = no.of days (ret_date - due_date) * 10 
+d) Write a trigger on insert of ISSUETABLE such that 
+duedate = issuedate + 7 
+Create a data report that display the information of all books available in the 
+library. 
+
+ 
+Create database using following schema. Apply given Integrity Constraints and 
+answer the following queries using SQL. (Fill up database with at least 10 records 
+in each table). 
+BOOKMASTER ( bid, title, author, price) 
+STUDENTMASTER (stud enrollno, snaine,class,dept) 
+ACCESSIONTABLE ( accession no,avail) 
+fiMUETABLE(issueid,as_ussion no,stud earalno,issuedate,duedate, ret_date,bi,d) 
+Integrity Constraints:  
+• The values of any attributes should not be null. 
+• Avail should be T ( if book is not issue ) or 1' (if book is issue) 
+Queries:  
+a) Find the detail information of the students who have issued books 
+Between two given dates. 
+b) Create a view that display all the accession infortnatiOn for a book 
+having bid = 100 
+c) Write a cursor to fetch last record from view in (b). 
+d) Find the information of books issued by MCA students. 
+Create a input form for new book issue. Apply all possible validations. 
+Duration 3:00 Hrs. 
+Instructions: 
+
+
+Create database using following schema. Apply given Integrity Constraints and 
+answer the followingqueries using SQL. (Fill up database with at least 10 records 
+ir+ eaoh,tab4e). 
+BOOKMASTER ( bid, title, author, price) 
+STUDENTMASTER (stud enroll no, sname,class,dept) 
+ACCESSIONTABLE ( bid, accession no,avail) 
+SUETABLE(issueid,accessipn no.stl.KLmrsillag,issuedate,cluedate, ret_date,hisp 
+Integrity Constraints:  
+• The values of any attributes should not be null. 
+• Avail should be T ( if book is not issue ) or F (if book i8 issue) 
+Queries: 
+a) Write a procedure for giving the detail information of books available 
+in the library. 
+b) Find the number of books issued by each student. 
+c) Write a trigger such that the return date should not exceed today's 
+date. 
+d) Find the number of books available in the library & written by "Henry 
+Korth". 
+Create a class wise issue report of books. 
+
+ 
+Create database using following schema. Apply given Integrity Constraints and 
+answer the following queries using SQL. (Fill up database with at least 10 records 
+in •aa table). 
+EMPLOYEE ( fname, lname, ssn, sex, salary, joindate,superssn, dno,) 
+DEPT ( dname, dnum, mgrssn, dlocation) 
+PROJECT ( pname, pno, plocation, &lumber) 
+WORK ON ( ssn, pno, hours) 
+Integrity Constraints:  
+• The values of any attributes should not be null. 
+• The deptno should less than 4 digit 
+• ssn (social security_no of employee) 
+• mgrssn(manager_social_security_no) 
+• superssn(supervisor_social_security_no) 
+Queries:  
+a) For every project located in `jalgaon'. List the pno,the controlling detptno 
+and dept manager last name. 
+b) For each project on which more than two employee work, Find the pno, 
+pnarne & no. of employees who work on the project. 
+c) create a view that has the deptna.me,manager name 8z manager salary 
+for every dept. 
+d) Express the following constraint as SQL assertions - 
+"salary of employee must not be greater than the salary of the manager of 
+the dept". 
+Create a data entry for New employee entry. Apply all possible validations. 
+
+
+Creat4 database using following schema. Apply given Integrity Constraints and answer the 
+following queries using SQL. (Fill up database with at least 10 records in each table). 
+ACCOUNT (accno, open_date, acctype, balance) 
+TRANSACTION (trans id, trans date, accno. trans_type, amount) CUSTOMER 
+(cust id name, address, accno) 
+Integrity Constraints:  
+• The values of any attributes should not be null. 
+• acctype value should be P(Personal) or J(Joint). 
+• Accno should be less than 3 digits. 
+• Trans_type should be C(Credit) or D(Debit) 
+Queries:  
+a) Find the details of customers who have opened the accounts within the period 25-3
+2006 to 28-3-2006. 
+b) Find the details of customers who have joint accounts & balance is less than 2 lakhs. 
+c) Write a trigger TRANSACTION on table to calculate the current balance of the account 
+on which transaction is made. 
+( if trans_type = c then bal = bal + amt else if trans_type = d then bal bal — amt) 
+d) write a cursor on CUSTOMER table to fetch the last row. 
+Create a data entry for New customer entry. Apply all possible validations. 
+
+
+Create database using following schema. Apply given Integrity Constraints and answer the 
+following queries using SQL.(Fill up database with at least 10 records in each table). 
+PRODUCT ( Maker,  .Modelno, Type ) 
+PC( 4.oc jeki,o, Speed, RAM, HD, CD, Price ) 
+LAPTOP ( Modelno, Speed, RAM, HD, Price ) 
+PRINTER ( Mosklm, Color, Type, Price ) 
+Details regarding Schemas  
+• PC relation contains model no. of PC, its speed in MHz, RAM in MB, HD size 
+in GB, Speed of CD reader, and price. 
+• The value for Maker in Product table can be IBM, Compaq,etc. 
+• PRINTER relation contains model no., value of Color should be T(if printer is 
+color) or F (if printer is black & white), type(laser, ink-jet, dot- matrix or dry), and 
+price. 
+Integrity Constraints: 
+• The values of any attributes should not be null. 
+• Product Type should one of these (PC, Laptop or Printer) 
+Queries:  
+a) Find the manufacturers of color printers. 
+b) Find the laptops whose speed is slower than that of any PC. 
+c) Express the following constraint as SQL assertions - 
+"No black & white printer should have price greater than color printers." 
+d) write a trigger on PC & LAPTOP table such that the hard disk size should be greater 
+than 20 GB 
+Design an input form for entering PRINTER data. Apply possible validations. 
+
+ 
+Create database using following schema. Apply given Integrity Constraints and answer the 
+following queries using SQL.(Fill up database with at least 10 records in each table). 
+PRODUCT ( Maker,  Modelno, Type ) 
+PC ( IvIodeln, Speed, RAM, HD, CD, Price ) 
+LAPTOP (Rh, Speed, RAM, HD, Price ) 
+PRINTER ( Model, Color, Type, Price ) 
+Details regarding Schemas  
+• PC relation contains model no. of PC, its speed in MHz, RAM in MB, HD size in 
+GB, Speed of CD reader, and price. 
+• The value for Maker in Product table can be IBM, Compaq,etc. 
+• PRINTER relation contains model no., value of Color should be T(if printer is color) 
+or F (if printer is black & white), type(laser, ink-jet, dot- matrix or dry), and price. 
+Integrity Constraints: 
+• The values of any attributes should not be null. 
+• Product Type should one of these (PC, Laptop or Printer) 
+Queries:  
+a) Find the manufacturers of color printers. 
+b) Find the laptops whose speed is slower than that of any PC. 
+C) Express the following constraint as SQL assertions - 
+No black & white printer should have price greater than color printers." 
+d) write a trigger on PC & LAPTOP table such that the hard disk size should be greater than 
+20 GB 
+Design an input form for entering PC data. Apply possible validations. 
+
+
+Create database using following schema. Apply given Integrity Constraints and 
+answer the following queries using SQL.(Fill up database with at least 10 records in 
+each table). 
+PRODUCT ( Maker,  Modelno, Type ) 
+PC ( Modelno, Speed, RAM, HD, CD, Price ) 
+LAPTOP ( Modelno, Speed, RAM, HD, Price ) 
+PRINTER ( Modelno, Color, Type, Price ) 
+Details regarding Schemas  
+• PC relation contains model no. of PC, its speed in MHz, RAM in MB, 
+HD size in GB, Speed of CD reader, and price. 
+• The value for Maker in Product table can be IBM, Compaq,etc. 
+• PRINTER relation contains model no., value of Color should be T(if 
+printer is color) or F (if printer is black & white), type(laser, ink-jet, dot- 
+matrix or dry), and price. 
+Integrity Constraints:  
+• The values of any attributes should not be null. 
+• Product Type should one of these (PC, Laptop or Printer). 
+Queries:  
+a) Find the different types of printers produced by Epson. 
+b) Find those hard disk sizes which occur in two or more PC's. 
+c) Write a trigger on LAPTOP table such that the minimum speed should be 
+120MHz. 
+d) Demonstrate the use of cursor using PRODUCT table. 
+Design an input form for entering LAPTOP data. Apply possible validations. 
+
+
+Create database using following schema. Apply given Integrity Constraints and 
+answer the following queries using SQL.(Fill up database with at least 10 records in 
+each table). 
+*PRODUCT ( Maker,  Modelno, Type ) 
+PC ( Modelno, Speed, RAM, HD, CD, Price ) 
+LAPTOP ( Modelno, Speed, RAM, HD, Price ) 
+PRINTER (1Viodelno, Color, Type, Price ) 
+Details regarding Schemas  
+• PC relation contains model no. of PC, its speed in MHz, RAM in MB, 
+HD size in GB, Speed of CD reader, and price. 
+• The value for Maker in Product table can be IBM, Compacketc. 
+• PRINTER relation contains model no., value of Color should be T(if 
+printer is color) or F (if printer is black & white), type(laser, ink-jet, dot- 
+matrix or dry), and price. 
+Integrity Constraints:  
+• The values of any attributes should not be null. 
+• Product Type should one of these (PC, Laptop or Printer) 
+Queries:  
+a) Find the different types of printers produced by Epson. 
+b) Find those hard disk sizes which occur in two or more PC's. 
+c) Write a trigger on LAPTOP table such that the minimum speed should be 
+1201v1Hz. 
+d) Demonstrate the use of cursor using PRODUCT table. 
+Design an input form for entering LAPTOP data. Apply possible validations. 
+
+
+Create database using following schema. Apply given Integrity Constraints and answer the 
+following queries using SQL.(Fill up database with at least 10 records in each table). 
+PRODUCT( Maker,  Modelno, Type ) 
+PC ( Modelno, Speed, RAM, HD, CD, Price ) 
+LAPTOP ( Modetno, Speed, RAM, HD, Price ) 
+PRINTER ( ModelaQ, Color, Type. Price ) 
+Details regarding Schemas  
+• PC relation contains model no. of PC, its speed in MHz, RAM in MB, HD size in GB, 
+Speed of CD reader, and price. 
+• The value for Maker in Product table can be 113M, Compaq,etc. 
+• PRINTER relation contains model no., value of Color should be T(if printer is color) or F (if 
+printer is black & white), type(laser, ink-jet, dot- matrix or dry), and price. 
+Integrity Constraints:  
+• The values of any attributes should not be null. 
+• Product Type should one of these (PC, Laptop or Printer) 
+Queries:  
+a) Find PC models having a speed of at least 150 MHz. 
+b) Find those manufacturers that sell Laptops, but not PC's. 
+c) Write a trigger on LAPTOP table such that the price should not less than 30000 
+d) Write a procedure to find the manufacturer who has produced the most expensive laptop. 
+Design an input form for entering LAPTOP data. Apply possible validations. 
+
+ 
+Create database using following schema. Apply given Integrity Constraints and 
+answer the following queries using SQL. (Fill up database with at least 10 records in 
+each table). 
+DOCTOR (Did, Dname, Daddress, qualification) 
+PATIENTMASTER (Pcode, Pname, Padd, age, gender, bloodgroup, Did) 
+ADMITTEDPATIENT (Pcode, Entry date, Discharge_clate, wardno, disease ) 
+Integrity Constraints: 
+• The values of any attributes should not be null. 
+• Gender value should be M (male) or F(feinale). 
+• Wardno should be less than 6. 
+Queries:  
+a) Find the details of patient who are admitted within the period 03/03/08 
+to 25/ 03/08. 
+b) Find the names of doctors who are treating Jalf_zaon patients. 
+c) write a procedure on ADMITTEDPATIENT table such as to calculate the 
+bill of all patients currently admitted in the hospital. 
+(bill = no _ of_ days * 500) 
+d) Write a trigger on Doctor table such that the specialization should be :- 
+M.B.B.S./B.A.M.S/M.S. 
+Create a data entry form for new DOCTOR. Apply all possible validations. 
+
+
+Create database using following schema. Apply given Integrity Constraints and 
+answer the following queries using SQL. (Fill up database with at least 10 records in 
+each table). 
+DOCTOR (Did, Dname, Daddress, qualification) 
+PATIENTMASTER (Pcode, Pname, Padd, age, gender, bloodgroup, Did) 
+ADMITTEDPATIENT (Pcode, Entry date, Discharge_date, warcino, disease ) 
+Integrity Constraints:  
+• The values of any attributes should not be null. 
+• Gender value should be .M (male) or F(female). 
+• Wardno should be less than 6. 
+Queries: 
+a) Find details of the patients who are treated by M.B.B.S. doctors. 
+b) Find name of the doctor who are treating the male patients suffering 
+from disease brain tumor & having age less than 40 years. 
+c) write a procedure on ADMITTEDPATIENT table such as to calculate the 
+bill of all patients who are discharged on 30-3-2008 . 
+(bill no of days * 500) 
+d) write a cursor on DOCTOR table to fetch the first row & display the 
+number of rows present in the table. 
+Create a data entry form for new patient. Apply all possible validations.
