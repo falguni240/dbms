@@ -18,6 +18,7 @@ d) Write a procedure for calculating the total sales of all the parts which are 
 projects in paris city. 
 Design an Input form for entering Parts data. Apply possible validations.
 
+
 Create database using following schema. Apply given Integrity Constraints and answer the following 
 queries using SQL.(Fill up database with at least 10 records in each table). 
 PRODUCT ( Maker,  Modelno, Type ) 
@@ -105,6 +106,7 @@ d) Write a procedure to give the details of patients who are admitted in the hos
 more than 5 days. 
 Create a input form for doctors. Apply all possible validations. 
 
+
 Create database using following schema. Apply given Integrity Constraints and answer the 
 following queries using SQL. (Fill up database with at least l 0 records in each table). 
 DOCTOR (Did, Dname, Daddress, qualification) 
@@ -123,6 +125,7 @@ patients. (bill no of days * 600)
 d) Write a cursor on PATIENTMASTER table to fetch the last record & display the rows in 
 that table. 
 Create a data entry for New Doctor's entry. Apply all possible validations
+
 
 Create database using following schema. Apply given Integrity Constraints and answer the 
 following queries using SQL. (Fill up database with at least 10 records in each table). 
@@ -166,6 +169,7 @@ balance is less than 10000 then print the 'loan is not provided'else 'loan is
 provided'. 
 Create a data entry for New account entry. Apply all possible validation
 
+
 Create database using following schema. Apply given Integrity Constraints and 
 answer the following queries using SQL. (Fill up database with at least 10 records in 
 each table). 
@@ -186,6 +190,7 @@ c) Write a trigger on ACCOUNT table such that if balance is less than
 d) Write a procedure on ACCOUNT & TRANSACTION table such that as 
 user enters new transaction the balance is, updated in ACCOUNT table. 
 Create a data entry for New customer entry. Apply all possible validations.
+
 
 Create database using following schema. Apply given integrity Constraints and 
 answer the following queries using SQL. (Fill up database with at least 10 records in 
@@ -209,6 +214,7 @@ debited.
 d) Write a procedure on ACCOUNT table to calculate interest on current 
 balance from open_date to today's date. (Take interest rate from user). 
 Create a data entry for New account entry. Apply all possible validations.
+
 
 .Creat4 database using following schema. Apply given Integrity Constraints and 
 answer the following queries using SQL. (Fill up database with at least 10 records in 
